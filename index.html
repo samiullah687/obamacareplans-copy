@@ -1,0 +1,1972 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health Project</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./resources/styles.css" />
+    <script
+      defer=""
+      type="text/javascript"
+      src="//cdn.obamacareplans.com/js/09-KTZw/jquery-3.6.0,bootstrap-4.6.0,extensions,oo-utils,validate,health-form-validation,menu-sitelink,owl-carousel,owl-carousel-setup,health-index-client,oe-countdown,interactive-map"
+    ></script>
+    <link
+      href="//cdn.obamacareplans.com/css/09-KTZw/bootstrap-4.6.0,health-global,v2-health-global,health-results,owl-carousel,health-index,override-global,v2-b-override,v2-b-article-content-override,v1-ux-header"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script
+      src="https://www.amcharts.com/lib/3/ammap.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://www.amcharts.com/lib/3/maps/js/usaHigh.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://www.amcharts.com/lib/3/themes/light.js"
+      type="text/javascript"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="top-bar sticky-sm-top text-center">
+        <span
+          ><a href="#">ObamacarePlans.com</a> is not a government website and is
+          privately owned.</span
+        >
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="./resources/images/logo.svg"
+              alt="logo"
+              height="60px"
+              width="auto"
+          /></a>
+          <div class="navbar" id="navbarNav">
+            <div>
+              <span class="d-flex align-items-center"
+                ><p class="online-status-icon"></p>
+                <p>Speak to an Agent!</p></span
+              >
+              <h5><a href="tel:8338147667">(833) 814-7667</a></h5>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- hero section -->
+      <section class="hero phone-top">
+        <div class="container hero__titleContainer">
+          <div class="row">
+            <div class="col-12 text-center">
+              <div class="hero-title">
+                You May Still Qualify for Coverage After Open Enrollment:
+              </div>
+              <div class="hero-subtitle">
+                Compare Affordable Health Options in !
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container hero__zipContainer">
+          <div class="row">
+            <div class="col-12">
+              <form class="js-validate-form" novalidate="novalidate">
+                <div class="formGroup zipInput">
+                  <input
+                    type="tel"
+                    class="zipInput-input text-center js-zip"
+                    value=""
+                    name="zip"
+                    aria-label="Zip Code"
+                    required=""
+                    placeholder="Zip Code"
+                  />
+                  <button class="zipInput-button">
+                    See Plans &amp; Prices
+                    <svg
+                      version="1.1"
+                      class="zipInput-arrow"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 330 512"
+                      style="enable-background: new 0 0 330 512"
+                      xml:space="preserve"
+                      height="14px"
+                      fill="#fff"
+                    >
+                      <g>
+                        <polygon
+                          points="0,72 72,0 330,256 74,512 0,438 186,256 	"
+                        ></polygon>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="hero-subsection desktopOnly">
+        <div class="container">
+          <div class="row">
+            <div class="col-4 d-flex align-items-center">
+              <svg
+                version="1.1"
+                class="icon__clock"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 85 85"
+                style="enable-background: new 0 0 85 85"
+                xml:space="preserve"
+              >
+                <g>
+                  <path
+                    d="M45.5,39.5c5.6,0,11,0,16.4,0c0,2.2,0,4.3,0,6.6c-7.6,0-15.2,0-23,0c0-9.8,0-19.7,0-29.6c2.1,0,4.3,0,6.6,0
+                                C45.5,24.1,45.5,31.7,45.5,39.5z"
+                  ></path>
+                  <path
+                    d="M42.2,83.5C20.1,83.5,2,65.4,2,43.2S20.1,3,42.2,3s40.2,18.1,40.2,40.2S64.4,83.5,42.2,83.5z M42.2,10
+                                C23.9,10,9,24.9,9,43.2s14.9,33.2,33.2,33.2s33.2-14.9,33.2-33.2S60.6,10,42.2,10z"
+                  ></path>
+                </g>
+              </svg>
+              <div class="ms-2">Compare in Minutes</div>
+            </div>
+            <div class="col-4 d-flex align-items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 96.6 88.32"
+                class="icon__monitor"
+              >
+                <path
+                  d="M96.55,10.37C96.53,2.86,93.79,0,86.36,0q-38-.06-76,0C2.86,0,.05,2.82,0,10.23v42C0,62.58,2,64.6,12.19,64.61H35.56v11.6H16.44V88.29H80.23V76H61V64.61H86.28c7.49,0,10.29-2.78,10.31-10.2Q96.64,32.38,96.55,10.37ZM83.7,51.72H12.9V8.91H83.7Z"
+                  transform="translate(0 0.03)"
+                ></path>
+              </svg>
+              <div class="ms-2">Top Carriers &amp; Brokers</div>
+            </div>
+            <div class="col-4 d-flex align-items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 71.15 100"
+                class="icon__lock"
+              >
+                <path
+                  d="M0,40.38V100H71.15V40.38ZM40.37,71.63v8.18a4.81,4.81,0,0,1-9.61.44,3.23,3.23,0,0,1,0-.44V72.12a4,4,0,0,1,0-.49,8.65,8.65,0,0,1-3.67-5.4,7.85,7.85,0,0,1-.2-1.81,8.66,8.66,0,0,1,17.31,0,8.44,8.44,0,0,1-.2,1.81A8.72,8.72,0,0,1,40.37,71.63Z"
+                ></path>
+                <path
+                  d="M63.46,26.92V40.38H51.92v-14a16.35,16.35,0,1,0-32.69-.81q0,.41,0,.81v14H7.69V26.92A27,27,0,0,1,34.62,0h1.92A27,27,0,0,1,63.46,26.92Z"
+                ></path>
+              </svg>
+              <div class="ms-2">100% Safe &amp; Secure</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Service coverage` -->
+      <section class="gray-bg">
+        <div class="container">
+          <div class="row d-flex flex-column articleContent">
+            <div class="col-12 col-lg-6 max-width-100">
+              <div
+                class="articleContent__title collapsed"
+                data-toggle="collapse"
+                data-target="#coveredText"
+              >
+                <h2>We Have You Covered</h2>
+              </div>
+              <div class="articleContent-text" id="coveredText">
+                <p>
+                  Finding the right plan can be difficult. Each
+                  <a href="/types-of-plans.html">plan</a> has its pros and cons,
+                  especially considering how costs can vary depending on the
+                  plan's monthly premiums, deductibles and co-pays.
+                </p>
+
+                <p>
+                  The good news is that ObamacarePlans.com summarizes all the
+                  key info for you, making it easy to compare your options and
+                  decide. Whether you prefer to lower your monthly premiums with
+                  a <a href="/bronze.html">Bronze</a> or
+                  <a href="/silver.html">Silver plan</a>, or need to lower your
+                  out-of-pocket cost with a <a href="/gold.html">Gold</a> or
+                  <a href="platinum.html">Platinum plan</a> -- we have you
+                  covered.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 max-width-100">
+              <div class="text-center">
+                <h3>Click to Compare Plans in Your State</h3>
+              </div>
+              <div
+                style="
+                  max-width: 980px;
+                  margin: 5px auto 10px auto;
+                  font-size: 14px;
+                "
+              >
+                <div
+                  style="
+                    position: relative;
+                    padding: 0 0 70% 0;
+                    height: 0;
+                    overflow: hidden;
+                  "
+                >
+                  <iframe
+                    style="
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      width: 100%;
+                      height: 100%;
+                    "
+                    src="//www.fla-shop.com/visited-states/embed/?vc=1ca032&uc=90cfea&hc=40bfa6&bc=ffffff&sl=on"
+                    frameborder="0"
+                    scrolling="no"
+                  ></iframe>
+                </div>
+              </div>
+
+              <div id="mapdiv" style="width: 1000px; height: 450px"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Plans` -->
+      <section class="articleContent">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div>
+                <h2 class="section-heading">Do I Qualify for a Plan?</h2>
+              </div>
+              <div class="articleContent-text" id="qualifyPlanText">
+                <p>
+                  In order to get an Obamacare Plan, you must sign up during
+                  <a href="open-enrollment.html">Open Enrollment</a>. If you
+                  missed Open Enrollment, you can still get an Obamacare plan
+                  during
+                  <a href="special-enrollment.html">Special Enrollment</a>. You
+                  qualify for Special Enrollment if you, or someone in your
+                  household, recently experienced certain life events -- such as
+                  losing health coverage, changing jobs, getting
+                  married/divorced, having a child, or moving, to name a few.
+                </p>
+                <div class="carousel-wrapper d-flex position-relative">
+                  <div class="js-owl-carousel-prev" id="prevBtn">
+                    <svg
+                      version="1.1"
+                      class="qualifyPlan__arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 330 512"
+                      style="enable-background: new 0 0 330 512"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <polygon
+                          points="0,72 72,0 330,256 74,512 0,438 186,256 	"
+                        ></polygon>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="owl-carousel owl-theme">
+                    <div
+                      class="item d-flex flex-column align-items-center justify-content-center text-center"
+                    >
+                      <svg
+                        class="qleCarousel__icon"
+                        width="65"
+                        height="66"
+                        viewBox="0 0 65 66"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M27.42 8.79363L32.5 3.14363L37.59 8.79363H27.42Z"
+                          stroke="#F26530"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M27.42 8.79362L32.5 21.7536L37.59 8.79362H27.42Z"
+                          stroke="#F26530"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M37.59 8.79363L39.81 3.14363L44.69 8.79363H37.59Z"
+                          stroke="#F26530"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M20.29 8.79363L25.19 3.14363L27.41 8.79363H20.29Z"
+                          stroke="#F26530"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M20.29 8.79362L32.5 21.7536L27.41 8.79362H20.29Z"
+                          stroke="#F26530"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M32.5001 3.14363L27.4201 8.79363L25.1901 3.14363H32.5001Z"
+                          stroke="#F26530"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M44.6901 8.79362L32.5001 21.7536L37.5901 8.79362H44.6901Z"
+                          stroke="#F26530"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M32.5001 3.14363L37.5901 8.79363L39.8101 3.14363H32.5001Z"
+                          stroke="#F26530"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M38.2 21.4536C46 23.8836 51.67 31.1536 51.67 39.7636C51.67 50.3536 43.09 58.9336 32.5 58.9336C21.91 58.9336 13.33 50.3436 13.33 39.7536C13.33 30.9736 19.23 23.5736 27.28 21.3036"
+                          stroke="#1B75BC"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M41.86 17.5936C50.49 21.2436 56.55 29.7936 56.55 39.7536C56.55 53.0336 45.78 63.8036 32.5 63.8036C19.22 63.8036 8.45001 53.0436 8.45001 39.7536C8.45001 29.8036 14.49 21.2736 23.1 17.6136"
+                          stroke="#1B75BC"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                      <br />
+                      Marriage or Divorce
+                    </div>
+                    <div
+                      class="item d-flex flex-column align-items-center justify-content-center text-center"
+                    >
+                      <svg
+                        class="qleCarousel__icon"
+                        width="65"
+                        height="66"
+                        viewBox="0 0 65 66"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_1215_1222)">
+                          <path
+                            d="M62.38 20.8536L50.11 6.24363L42.04 13.0136V2.47363H22.96V13.0136L14.88 6.24363L2.62 20.8536L17.66 33.4736L2.62 46.0936L14.88 60.7036L22.96 53.9336V64.4736H42.04V53.9336L50.11 60.7036L62.38 46.0936L47.34 33.4736L62.38 20.8536Z"
+                            stroke="#1B75BC"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M32.5 10.2036C33.6046 10.2036 34.5 9.3082 34.5 8.20363C34.5 7.09906 33.6046 6.20363 32.5 6.20363C31.3954 6.20363 30.5 7.09906 30.5 8.20363C30.5 9.3082 31.3954 10.2036 32.5 10.2036Z"
+                            stroke="#1B75BC"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M32.5 57.8436V60.8336"
+                            stroke="#1B75BC"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M32.5 20.3336V52.4036"
+                            stroke="#1B75BC"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M32.5 13.0836V14.7136"
+                            stroke="#1B75BC"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M35 48.2036C35.82 48.7236 36.97 49.7936 36.76 51.3736C36.23 55.3936 29.95 54.2836 28.83 58.5336"
+                            stroke="#F26530"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M35 30.4236C36.07 30.9636 37.43 32.0336 37.43 34.6536C37.43 39.0736 30.31 39.6836 28.67 41.5336C26.91 43.5336 28.93 45.1936 29.99 45.8236"
+                            stroke="#F26530"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M38.33 19.6036C38.33 19.6036 32.55 14.9136 27.62 19.1436C25.29 21.1436 25.41 26.2636 30.02 28.5336"
+                            stroke="#F26530"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_1215_1222">
+                            <rect
+                              width="65"
+                              height="65"
+                              fill="white"
+                              transform="translate(0 0.973633)"
+                            ></rect>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <br />
+                      Loss of eligibility <br />for Medicaid
+                    </div>
+                    <div
+                      class="item d-flex flex-column align-items-center justify-content-center text-center"
+                    >
+                      <svg
+                        class="qleCarousel__icon"
+                        width="65"
+                        height="66"
+                        viewBox="0 0 65 66"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M39.7 17.7736H25.4V33.5736H39.7V17.7736Z"
+                          stroke="#F26530"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M59.9 56.0736H5.09998V63.4736H59.9V56.0736Z"
+                          stroke="#1B75BC"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M26.8 3.47363H38.1C45.3 3.47363 51.1 9.27363 51.1 16.4736V56.0736H13.8V16.4736C13.8 9.27363 19.7 3.47363 26.8 3.47363Z"
+                          stroke="#1B75BC"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M37.4 41.9736C37.4 41.9736 35.2 41.9736 32.3 41.9736C29.4 41.9736 27.6 41.9736 27.6 41.9736C27.6 41.9736 29.4 41.9736 32.3 41.9736C35.2 41.9736 37.4 41.9736 37.4 41.9736Z"
+                          stroke="#F26530"
+                          stroke-width="2"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M37.4 46.2736C37.4 46.2736 35.2 46.2736 32.3 46.2736C29.4 46.2736 27.6 46.2736 27.6 46.2736C27.6 46.2736 29.4 46.2736 32.3 46.2736C35.2 46.2736 37.4 46.2736 37.4 46.2736Z"
+                          stroke="#F26530"
+                          stroke-width="2"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                      <br />
+                      Death of a family <br />member
+                    </div>
+                    <div
+                      class="item d-flex flex-column align-items-center justify-content-center text-center"
+                    >
+                      <svg
+                        class="qleCarousel__icon"
+                        width="65"
+                        height="66"
+                        viewBox="0 0 65 66"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M22.01 34.3886C15.38 34.3886 10 39.7686 10 46.3986C10 53.0286 15.38 58.4086 22.01 58.4086C28.64 58.4086 34.02 53.0286 34.02 46.3986"
+                          stroke="#1B75BC"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M22.01 28.8886C12.34 28.8886 4.5 36.7286 4.5 46.3986C4.5 56.0686 12.34 63.9086 22.01 63.9086C31.68 63.9086 39.52 56.0686 39.52 46.3986"
+                          stroke="#1B75BC"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M31.47 13.1386C34.259 13.1386 36.52 10.8777 36.52 8.08864C36.52 5.2996 34.259 3.03864 31.47 3.03864C28.6809 3.03864 26.42 5.2996 26.42 8.08864C26.42 10.8777 28.6809 13.1386 31.47 13.1386Z"
+                          stroke="#F26530"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M57.1 46.9486H52.96L48.95 35.9386C48.45 34.5786 47.18 33.7286 45.81 33.7086C45.73 33.7086 45.65 33.6786 45.56 33.6786H34.87V28.8186H43.96C45.84 28.8186 47.36 27.2986 47.36 25.4186C47.36 23.5386 45.84 22.0186 43.96 22.0186H34.87V21.0786C34.87 19.2086 33.34 17.6786 31.47 17.6786C29.6 17.6786 28.07 19.2086 28.07 21.0786V37.0886C28.07 38.9586 29.6 40.4886 31.47 40.4886C31.59 40.4886 31.71 40.4686 31.83 40.4486C31.95 40.4586 32.07 40.4886 32.2 40.4886H43.37L47.26 51.1686C47.31 51.3086 47.38 51.4386 47.45 51.5586C47.94 52.8386 49.17 53.7486 50.62 53.7486H57.1C58.98 53.7486 60.5 52.2286 60.5 50.3486C60.5 48.4686 58.98 46.9486 57.1 46.9486V46.9486Z"
+                          stroke="#F26530"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                      <br />
+                      Change in <br />
+                      Disability status
+                    </div>
+                    <div
+                      class="item d-flex flex-column align-items-center justify-content-center text-center"
+                    >
+                      <svg
+                        class="qleCarousel__icon"
+                        width="65"
+                        height="66"
+                        viewBox="0 0 65 66"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_1215_1221)">
+                          <path
+                            d="M52.7709 35.2436L47.0809 19.6136C46.9109 19.1336 46.3709 18.8936 45.8709 19.0736L25.8209 26.3736C25.3309 26.5536 25.0709 27.0836 25.2409 27.5636L30.9309 43.1936"
+                            stroke="#F26530"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M37.3433 6.44334L24.3379 11.1769C23.819 11.3658 23.5514 11.9396 23.7403 12.4586L28.0155 24.2048C28.2044 24.7237 28.7783 24.9913 29.2972 24.8024L42.3026 20.0689C42.8216 19.88 43.0892 19.3061 42.9003 18.7872L38.625 7.04101C38.4361 6.52204 37.8623 6.25445 37.3433 6.44334Z"
+                            stroke="#F26530"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M10.5109 4.09363C10.7009 4.09363 10.9009 4.13363 11.0809 4.20363C11.4809 4.37363 11.8009 4.70363 11.9309 5.12363L26.4709 49.4436L58.1309 38.2336C58.3009 38.1736 58.4609 38.1436 58.6309 38.1436C59.2509 38.1436 59.8309 38.5236 60.0409 39.1436C60.3209 39.9236 59.9109 40.7836 59.1309 41.0636L26.0209 52.7836C25.8609 52.8436 25.6909 52.8736 25.5209 52.8736C25.2909 52.8736 25.0709 52.8236 24.8609 52.7236C24.5009 52.5436 24.2209 52.2236 24.1009 51.8436L9.63091 7.72363L7.02091 9.04363C6.80091 9.15363 6.57091 9.20363 6.34091 9.20363C5.79091 9.20363 5.27091 8.90363 5.00091 8.38363C4.62091 7.64363 4.92091 6.74363 5.66091 6.36363L9.83091 4.25363C10.0409 4.14363 10.2809 4.09363 10.5109 4.09363ZM10.5109 2.09363C9.96091 2.09363 9.41091 2.22363 8.92091 2.47363L4.76091 4.58363C3.93091 5.00363 3.31091 5.72363 3.02091 6.61363C2.73091 7.50363 2.80091 8.45363 3.23091 9.28363C3.83091 10.4636 5.03091 11.2036 6.35091 11.2036C6.90091 11.2036 7.45091 11.0736 7.94091 10.8236L8.46091 10.5536L22.2109 52.4536C22.5009 53.3436 23.1509 54.0936 23.9909 54.5036C24.4709 54.7436 25.0109 54.8636 25.5409 54.8636C25.9409 54.8636 26.3309 54.7936 26.7109 54.6636L59.8209 42.9436C61.6409 42.3036 62.6009 40.2936 61.9509 38.4736C61.4609 37.0736 60.1309 36.1436 58.6509 36.1436C58.2509 36.1436 57.8609 36.2136 57.4909 36.3436L27.7509 46.8736L13.8309 4.50363C13.5109 3.53363 12.7909 2.75363 11.8409 2.36363C11.4109 2.18363 10.9609 2.09363 10.5009 2.09363H10.5109Z"
+                            fill="#1B75BC"
+                          ></path>
+                          <path
+                            d="M29.7809 64.8536C33.0891 64.8536 35.7709 62.1718 35.7709 58.8636C35.7709 55.5554 33.0891 52.8736 29.7809 52.8736C26.4727 52.8736 23.7909 55.5554 23.7909 58.8636C23.7909 62.1718 26.4727 64.8536 29.7809 64.8536Z"
+                            stroke="#1B75BC"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M29.7809 60.9836C30.9517 60.9836 31.9009 60.0345 31.9009 58.8636C31.9009 57.6928 30.9517 56.7436 29.7809 56.7436C28.61 56.7436 27.6609 57.6928 27.6609 58.8636C27.6609 60.0345 28.61 60.9836 29.7809 60.9836Z"
+                            stroke="#1B75BC"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M41.4809 29.9236L38.2009 29.1736L36.1709 31.8536L33.2009 23.6836L38.5109 21.7536L41.4809 29.9236Z"
+                            stroke="#F26530"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M35.9309 14.6736L32.7609 14.2236L30.6209 16.6036L28.1709 9.88363L33.4809 7.95363L35.9309 14.6736Z"
+                            stroke="#F26530"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_1215_1221">
+                            <rect
+                              width="65"
+                              height="65"
+                              fill="white"
+                              transform="translate(0 0.973633)"
+                            ></rect>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <br />
+                      Moved to another<br />country or Zip code
+                    </div>
+                    <div
+                      class="item d-flex flex-column align-items-center justify-content-center text-center"
+                    >
+                      <svg
+                        class="qleCarousel__icon"
+                        width="65"
+                        height="66"
+                        viewBox="0 0 65 66"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16.4481 25.7535C19.4581 25.7535 21.8981 23.3135 21.8981 20.3035C21.8981 17.2935 19.4581 14.8535 16.4481 14.8535C13.4382 14.8535 10.9981 17.2935 10.9981 20.3035C10.9981 23.3135 13.4382 25.7535 16.4481 25.7535Z"
+                          stroke="#F26530"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M29.1981 22.5635C28.2781 21.6435 26.7781 21.6435 25.8581 22.5635L20.2981 28.1235C18.1681 30.2535 14.7281 30.2535 12.5981 28.1235L7.0681 22.5935C6.1581 21.6835 4.6781 21.6235 3.7381 22.5135C2.7681 23.4335 2.7781 24.9635 3.7181 25.8935L11.0481 33.1935V49.6735C11.0481 50.9935 12.0581 52.1035 13.3781 52.0835C14.6581 52.0635 15.6181 51.0135 15.6181 49.7235V42.4935C15.6181 42.0935 16.0581 41.7635 16.4581 41.7635C16.8581 41.7635 17.2981 42.0935 17.2981 42.4935V49.6735C17.2981 50.9935 18.3081 52.1035 19.6281 52.0835C20.9081 52.0635 21.8681 51.0135 21.8681 49.7235V33.2035L29.1881 25.9035C30.1081 24.9835 30.1281 23.4835 29.2081 22.5635H29.1981Z"
+                          stroke="#1B75BC"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M48.5781 25.7535C51.588 25.7535 54.028 23.3135 54.028 20.3035C54.028 17.2935 51.588 14.8535 48.5781 14.8535C45.5681 14.8535 43.1281 17.2935 43.1281 20.3035C43.1281 23.3135 45.5681 25.7535 48.5781 25.7535Z"
+                          stroke="#F26530"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M61.3281 22.5635C60.4081 21.6435 58.9081 21.6435 57.9881 22.5635L52.4281 28.1235C50.2981 30.2535 46.8581 30.2535 44.7281 28.1235L39.1981 22.5935C38.2881 21.6835 36.8081 21.6235 35.8681 22.5135C34.8981 23.4335 34.8781 24.9635 35.8181 25.8935L43.1181 33.1935L40.2081 45.3935H43.3481V49.6835C43.3481 51.0035 44.2781 52.1135 45.5981 52.0935C46.8781 52.0735 47.7581 51.0235 47.7581 49.7335V45.3935H49.4281V49.6835C49.4281 51.0035 50.4381 52.1135 51.7581 52.0935C53.0381 52.0735 53.9981 51.0235 53.9981 49.7335V45.3935H56.9081L53.9981 33.1935L61.2981 25.9035C62.2181 24.9835 62.2181 23.4835 61.2981 22.5635H61.3281Z"
+                          stroke="#1B75BC"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                      <br />
+                      Loss of eligibility <br />
+                      for CHIP
+                    </div>
+                    <div
+                      class="item d-flex flex-column align-items-center justify-content-center text-center"
+                    >
+                      <svg
+                        class="qleCarousel__icon"
+                        width="65"
+                        height="66"
+                        viewBox="0 0 65 66"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M62.5 18.4736H2.5V48.4736H62.5V18.4736Z"
+                          stroke="#1B75BC"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M34.77 29.3636C34.77 29.3636 33.76 28.7036 32.3 28.8736C31.15 29.0136 30.16 29.6236 30.19 30.9436C30.22 32.0336 31.16 32.7936 32.58 33.3136C34 33.8336 34.93 34.1436 34.98 35.6836C35.03 37.2236 33.7 38.0736 32.61 38.1036C31.52 38.1436 31.06 38.0436 29.72 37.4636"
+                          stroke="#F26530"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M32.5699 26.7536V28.8736"
+                          stroke="#F26530"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M32.46 40.1936V38.1236"
+                          stroke="#F26530"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M42.26 33.3736C42.26 39.4636 37.96 44.3936 32.66 44.3936C27.36 44.3936 23.06 39.4636 23.06 33.3736C23.06 27.2836 27.36 22.3536 32.66 22.3536C37.96 22.3536 42.26 27.2836 42.26 33.3736V33.3736Z"
+                          stroke="#F26530"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M10.78 18.4736C10.78 23.0436 7.07 26.7536 2.5 26.7536"
+                          stroke="#1B75BC"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M62.5 26.7536C57.93 26.7536 54.22 23.0436 54.22 18.4736"
+                          stroke="#1B75BC"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M54.22 48.4736C54.22 43.9036 57.93 40.1936 62.5 40.1936"
+                          stroke="#1B75BC"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M2.5 40.1936C7.07 40.1936 10.78 43.9036 10.78 48.4736"
+                          stroke="#1B75BC"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                      <br />
+                      Certain changes in <br />
+                      your income
+                    </div>
+                    <div
+                      class="item d-flex flex-column align-items-center justify-content-center text-center"
+                    >
+                      <svg
+                        class="qleCarousel__icon"
+                        width="65"
+                        height="66"
+                        viewBox="0 0 65 66"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M29.88 11.9886C30.8631 11.9886 31.66 11.1917 31.66 10.2086C31.66 9.22557 30.8631 8.42863 29.88 8.42863C28.8969 8.42863 28.1 9.22557 28.1 10.2086C28.1 11.1917 28.8969 11.9886 29.88 11.9886Z"
+                          stroke="#1C75BD"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M32.04 57.2086H12.92V12.5386H19.69"
+                          stroke="#1B75BC"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M40.07 12.5386H46.84V41.8386"
+                          stroke="#1B75BC"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M18.95 24.9786H40.92"
+                          stroke="#1B75BC"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M18.95 36.0186H40.92"
+                          stroke="#1B75BC"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M18.95 47.0586H31.59"
+                          stroke="#1B75BC"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M24.75 10.0486C24.75 7.21864 27.05 4.91864 29.88 4.91864C32.71 4.91864 35.01 7.21864 35.01 10.0486H39.81V16.1786H19.96V10.0486H24.76H24.75Z"
+                          stroke="#1B75BC"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M43.13 62.0286C48.073 62.0286 52.08 58.0216 52.08 53.0786C52.08 48.1357 48.073 44.1286 43.13 44.1286C38.1871 44.1286 34.18 48.1357 34.18 53.0786C34.18 58.0216 38.1871 62.0286 43.13 62.0286Z"
+                          stroke="#F26530"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M39.6 56.6186L46.67 49.5486"
+                          stroke="#F26530"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M39.6 49.5486L46.67 56.6186"
+                          stroke="#F26530"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                      <br />
+                      Loss of coverage
+                    </div>
+                    <div
+                      class="item d-flex flex-column align-items-center justify-content-center text-center"
+                    >
+                      <svg
+                        class="qleCarousel__icon"
+                        width="65"
+                        height="66"
+                        viewBox="0 0 65 66"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M51.33 22.5886C51.33 12.1891 42.8995 3.75864 32.5 3.75864C22.1005 3.75864 13.67 12.1891 13.67 22.5886V44.3586C13.67 54.7582 22.1005 63.1886 32.5 63.1886C42.8995 63.1886 51.33 54.7582 51.33 44.3586V22.5886Z"
+                          stroke="#1B75BC"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M24.38 52.2486C24.38 39.9986 39.64 34.7786 42.9 28.5786"
+                          stroke="#1B75BC"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M37.92 24.7986V22.7986"
+                          stroke="#F26530"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M27.08 24.7986V22.7986"
+                          stroke="#F26530"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M43.7 25.7686C45.32 25.7186 46.63 24.2786 46.63 22.4986C46.63 20.7186 45.33 19.2786 43.71 19.2286C42.28 14.4886 37.8 11.0286 32.5 11.0286C27.2 11.0286 22.72 14.4886 21.29 19.2286C19.67 19.2786 18.37 20.7186 18.37 22.4986C18.37 24.2786 19.67 25.7186 21.3 25.7686C22.56 29.8986 26.14 33.0586 30.56 33.7786"
+                          stroke="#F26530"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M30.17 16.5486C31.6 21.0486 40.18 16.6186 33.09 11.0286"
+                          stroke="#F26530"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                      <br />
+                      Birth or adoption <br />of a child
+                    </div>
+                    <div
+                      class="item d-flex flex-column align-items-center justify-content-center text-center"
+                    >
+                      <h2>
+                        <svg
+                          class="qleCarousel__icon"
+                          width="65"
+                          height="66"
+                          viewBox="0 0 65 66"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M29.235 21.5636C29.235 20.9936 29.035 14.0036 29.035 14.0036C29.035 14.0036 26.555 14.0936 25.195 12.8936C24.105 11.9336 25.025 9.90363 24.015 8.91363C22.655 7.57363 17.235 11.0736 13.165 11.3736C7.13499 11.8036 1.495 11.1736 1.495 12.0236C1.495 12.6336 1.91499 14.0236 3.105 14.8336C4.26499 15.6136 6.33499 15.6236 6.98499 15.4636C7.00499 16.4736 7.38499 17.7536 8.68499 18.2036C10.005 18.6636 10.845 18.5036 11.855 18.1636C12.065 19.1736 12.845 20.1036 13.835 20.4036C14.885 20.7236 15.865 20.5836 17.205 19.9036C17.725 20.9036 18.715 21.9036 19.925 21.9436C21.175 21.9836 22.145 21.4736 23.025 20.8736C24.785 22.3536 27.685 21.9436 29.255 21.5736L29.235 21.5636Z"
+                            stroke="#1B75BC"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M51.815 11.3736C47.745 11.0836 42.325 7.57363 40.965 8.91363C39.955 9.90363 40.875 11.9336 39.785 12.8936C38.425 14.0936 35.945 14.0036 35.945 14.0036C35.945 14.0036 35.745 20.9936 35.745 21.5636C37.315 21.9236 40.215 22.3436 41.975 20.8636C42.845 21.4636 43.825 21.9736 45.075 21.9336C46.285 21.8936 47.275 20.8936 47.795 19.8936C49.135 20.5736 50.125 20.7136 51.165 20.3936C52.155 20.0936 52.925 19.1636 53.145 18.1536C54.155 18.5036 54.995 18.6636 56.315 18.1936C57.615 17.7436 57.995 16.4636 58.015 15.4536C58.665 15.6136 60.735 15.6036 61.895 14.8236C63.085 14.0136 63.505 12.6236 63.505 12.0136C63.505 11.1636 57.855 11.7936 51.825 11.3636L51.815 11.3736Z"
+                            stroke="#1B75BC"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M32.485 58.4636V62.2636"
+                            stroke="#1B75BC"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M32.485 53.0636V53.3636"
+                            stroke="#1B75BC"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M32.485 45.7436V47.9836"
+                            stroke="#1B75BC"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M32.485 36.6636V40.5736"
+                            stroke="#1B75BC"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M32.485 10.9536V31.6536"
+                            stroke="#1B75BC"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M28.035 25.7036C28.035 25.7036 22.515 25.1136 22.505 29.7636C22.505 33.9936 29.755 34.0236 32.475 34.1636C34.635 34.2736 38.845 35.0936 38.845 38.9136C38.845 42.3736 34.325 42.6436 32.485 43.1436C31.075 43.5236 28.155 44.2336 28.135 47.0536C28.115 49.8736 31.115 50.2936 32.485 50.5236C33.495 50.6936 35.775 51.0736 35.775 53.3936C35.775 55.7136 32.365 55.8036 31.195 56.2036C29.955 56.6336 29.335 58.0036 30.265 60.0336"
+                            stroke="#F26530"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M36.935 25.7036C36.935 25.7036 42.455 25.1136 42.465 29.7636C42.465 33.9936 35.215 34.0236 32.495 34.1636C30.335 34.2736 26.125 35.0936 26.125 38.9136C26.125 42.3736 30.645 42.6436 32.485 43.1436C33.895 43.5236 36.815 44.2336 36.835 47.0536C36.855 49.8736 33.855 50.2936 32.485 50.5236C31.475 50.6936 29.195 51.0736 29.195 53.3936C29.195 55.7136 32.605 55.8036 33.775 56.2036C35.015 56.6336 35.635 58.0036 34.705 60.0336"
+                            stroke="#F26530"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                          <path
+                            d="M32.495 8.34362C33.5057 8.34362 34.325 7.52431 34.325 6.51362C34.325 5.50294 33.5057 4.68362 32.495 4.68362C31.4843 4.68362 30.665 5.50294 30.665 6.51362C30.665 7.52431 31.4843 8.34362 32.495 8.34362Z"
+                            stroke="#1B75BC"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </svg>
+                        <br />
+                        Expiration of your <br />
+                        COBRA benefits
+                      </h2>
+                    </div>
+                    <div
+                      class="item d-flex flex-column align-items-center justify-content-center text-center"
+                    >
+                      <svg
+                        class="qleCarousel__icon"
+                        width="65"
+                        height="66"
+                        viewBox="0 0 65 66"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M51.9106 37.9261V58.4761H38.7306V44.8861H26.5106V58.4761H13.3206V37.7061"
+                          stroke="#1B75BC"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                        <path
+                          d="M58.9406 34.5261L50.6406 26.1461V12.9361H44.4206V19.8561L33.5206 8.84613C33.0306 8.34613 32.2206 8.34613 31.7306 8.84613L6.05061 34.5261C5.32061 35.2561 5.32061 36.4461 6.05061 37.1861C6.78061 37.9161 7.97061 37.9161 8.71061 37.1861L32.1806 13.7061C32.4206 13.4661 32.8006 13.4661 33.0406 13.7061L56.2806 37.1661C57.0106 37.9061 58.2006 37.9061 58.9406 37.1761C59.6806 36.4461 59.6806 35.2561 58.9506 34.5161L58.9406 34.5261Z"
+                          stroke="#F26530"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></path>
+                      </svg>
+                      <br />
+                      Changes in your <br />
+                      household size
+                    </div>
+                  </div>
+                  <div class="js-owl-carousel-next" id="nextBtn">
+                    <svg
+                      version="1.1"
+                      class="qualifyPlan__arrow"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 330 512"
+                      style="enable-background: new 0 0 330 512"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <polygon
+                          points="0,72 72,0 330,256 74,512 0,438 186,256 	"
+                        ></polygon>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Affordable Care Act -->
+      <section class="blue-bg">
+        <div class="container">
+          <div class="row flex-align about-section pt-3">
+            <div class="col-12 col-md-8 py-2">
+              <div
+                class="articleContent__title"
+                data-toggle="collapse"
+                data-target="#acaText"
+              >
+                <span class="text-white">About the Affordable Care Act</span>
+                <span class="text-white">About the ACA</span>
+                <svg
+                  version="1.1"
+                  class="articleContent__arrow"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 330 512"
+                  style="enable-background: new 0 0 330 512"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <polygon
+                      points="0,72 72,0 330,256 74,512 0,438 186,256 	"
+                    ></polygon>
+                  </g>
+                </svg>
+              </div>
+              <div class="text-white articleContent-text" id="acaText">
+                <p>
+                  The Affordable Care Act (ACA), also known as "<a
+                    href="common-questions.html"
+                    >Obamacare</a
+                  >", has helped millions of people get health care coverage.
+                  Before the ACA, health insurance was unaffordable and
+                  unavailable for many. Now, with Obamacare, if you meet certain
+                  <a href="qualifying-for-lower-costs.html">qualifications</a>,
+                  the government will help pay for your monthly premiums and
+                  out-of-pocket cost. And for those who have preexisting medical
+                  conditions, you can no longer be denied coverage under
+                  Obamacare.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-4 desktopOnly text-left max-width-image-custom"
+            >
+              <img
+                src="//dhe4oz50378wj.cloudfront.net/img/siteplatform/health/act.png"
+                alt="Graphic of Affordable Care Act legislation"
+                width="373"
+                height="377"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why choose us -->
+      <section class="articleContent whyChoose">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div
+                class="articleContent__title"
+                data-toggle=""
+                data-target="#whyChooseText"
+              >
+                Why Choose ObamacarePlans.com
+                <svg
+                  version="1.1"
+                  class="articleContent__arrow"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 330 512"
+                  style="enable-background: new 0 0 330 512"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <polygon
+                      points="0,72 72,0 330,256 74,512 0,438 186,256 	"
+                    ></polygon>
+                  </g>
+                </svg>
+              </div>
+              <div class="articleContent-text" id="whyChooseText">
+                <p>
+                  We are <a href="common-questions.html">not the government</a>.
+                  We are not a health insurance company. Instead,
+                  ObamacarePlans.com works with multiple health insurance
+                  providers and brokers, making it easy for you to compare
+                  several options -- all in one place.
+                </p>
+
+                <p>How easy? It just takes 3 steps to find your plan:</p>
+
+                <div class="row">
+                  <div class="col-12 col-md-4 text-center whyChoose__content">
+                    <img
+                      src="./resources/images/step-1.png"
+                      alt="Map marker graphic"
+                      width="150"
+                      height="150"
+                    />
+                    <div class="whyChooseContent">
+                      <h2>Step 1</h2>
+                      <h3>Enter Your Zip Code.</h3>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 text-center whyChoose__content">
+                    <img
+                      src="./resources/images/step-2.png"
+                      alt="Generic user graphic"
+                      width="150"
+                      height="150"
+                    />
+                    <div class="whyChooseContent">
+                      <h2>Step 2</h2>
+                      <h3>Tell Us About Yourself.</h3>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 text-center whyChoose__content">
+                    <img
+                      src="./resources/images/step-3.png"
+                      alt="Graphic depicting comparison of insurance plans"
+                      width="150"
+                      height="150"
+                    />
+                    <div class="whyChooseContent">
+                      <h2>Step 3</h2>
+                      <h3>Compare Plans and Prices if<br />You Qualify.</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="footer-cta blue-bg phone-top py-5">
+        <div class="container hero__titleContainer">
+          <div class="row">
+            <div class="col-12 text-center">
+              <div class="title">Find an Affordable Plan Now!</div>
+              <div class="subtitle">
+                To start comparing plans and prices, enter your zip code.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container hero__zipContainer">
+          <div class="row">
+            <div class="col-12">
+              <form class="js-validate-form" novalidate="novalidate">
+                <div class="formGroup zipInput">
+                  <input
+                    type="tel"
+                    class="zipInput-input text-center js-zip"
+                    value=""
+                    name="zip"
+                    aria-label="Zip Code"
+                    required=""
+                    placeholder="Zip Code"
+                  />
+                  <button class="zipInput-button">
+                    See Plans &amp; Prices
+                    <svg
+                      version="1.1"
+                      class="zipInput-arrow"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 330 512"
+                      style="enable-background: new 0 0 330 512"
+                      xml:space="preserve"
+                      height="14px"
+                      fill="#fff"
+                    >
+                      <g>
+                        <polygon
+                          points="0,72 72,0 330,256 74,512 0,438 186,256 	"
+                        ></polygon>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="globalFooter">
+        <div class="container no-padding">
+          <div class="top-separation-line"></div>
+          <div class="globalFooter__upperSection">
+            <div class="globalFooter__upperText">
+              <div class="globalFooter__termsAndPrivacy">
+                <p class="globalFooter__labelText">Speak to an Agent</p>
+                <p>
+                  <a
+                    class="globalFooter__telephoneNumSmall"
+                    href="tel:(833) 814-7667"
+                    >(833) 814-7667</a
+                  >
+                  <span class="health-hours js-health-swap"
+                    >Mon-Fri: 8am-10pm EST <br />Sat-Sun: 9am-5pm EST</span
+                  >
+                  <span class="medicare-hours js-medicare-swap"
+                    >TTY users 711 &nbsp;<br /><strong>Hours:</strong> 8am -
+                    8pm,<br />7 days a week</span
+                  >
+                </p>
+                <p style="margin-top: -30px"></p>
+              </div>
+              <div class="globalFooter__termsAndPrivacy">
+                <p class="globalFooter__labelText">QuoteLab, LLC</p>
+                <p>
+                  700 S. Flower St. <br />Suite 640 <br />Los Angeles, CA 90017
+                </p>
+              </div>
+            </div>
+            <div class="globalFooter__bottomText">
+              <div class="globalFooter__termsAndPrivacy">
+                <a
+                  href="//insurance.mediaalpha.com/content/privacy-center.html?;0I9UrjJiSfQA_ii3KJioLnruTFj-c4xc7BTbns9Cvw8JcTvtLzqKIaSvM0fHWEJ-9MSnIR7F"
+                  target="_blank"
+                  class="globalFooter__labelText"
+                >
+                  <svg
+                    class="globalFooter__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="13.5"
+                    viewBox="0 0 16 13.5"
+                  >
+                    <g transform="translate(0 -1.5)">
+                      <circle
+                        cx="1.75"
+                        cy="1.75"
+                        r="1.75"
+                        transform="translate(1 1.5)"
+                      ></circle>
+                      <circle
+                        cx="1.75"
+                        cy="1.75"
+                        r="1.75"
+                        transform="translate(11.5 1.5)"
+                      ></circle>
+                      <path
+                        d="M13.5,6a4.761,4.761,0,0,0-3.474,2.032,6.853,6.853,0,0,1-.879.868,1.666,1.666,0,0,1,.331,1.558A5.227,5.227,0,0,0,11,9.191V14a1,1,0,0,0,1,1h3a1,1,0,0,0,1-1V8.5A2.5,2.5,0,0,0,13.5,6Z"
+                      ></path>
+                      <path
+                        d="M7.8,9.25c-.693,0-1.144-.463-1.823-1.218A4.761,4.761,0,0,0,2.5,6,2.5,2.5,0,0,0,0,8.5V14a1,1,0,0,0,1,1H4a1,1,0,0,0,1-1V9.191A3.717,3.717,0,0,0,7.8,10.75a.75.75,0,1,0,0-1.5Z"
+                      ></path>
+                    </g>
+                  </svg>
+                  <p>Privacy Center</p>
+                </a>
+                <a
+                  href="//insurance.mediaalpha.com/content/privacy-center.html?;0I9UrjJiSfQA_ii3KJioLnruTFj-c4xc7BTbns9Cvw8JcTvtLzqKIaSvM0fHWEJ-9MSnIR7F"
+                  target="_blank"
+                  class="globalFooter__labelText"
+                >
+                  <svg
+                    class="globalFooter__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="16"
+                    width="16"
+                    viewBox="0 0 16 16"
+                  >
+                    <g>
+                      <path
+                        data-color="color-2"
+                        d="M3,8.23822V4.5C3,3.12158,4.12109,2,5.5,2S8,3.12158,8,4.5v2.60498L9.05853,7.2226 C9.64032,6.46423,10,5.52753,10,4.5C10,2.01855,7.98145,0,5.5,0S1,2.01855,1,4.5C1,6.0567,1.79529,7.42993,3,8.23822z"
+                      ></path>
+                      <path
+                        d="M13.89996,16l1.0661-3.55365c0.53821-1.79388-0.68073-3.6369-2.54218-3.84369L7,8V4.5 C7,3.67157,6.32843,3,5.5,3S4,3.67157,4,4.5V12H3v-2H2.5C1.67157,10,1,10.67157,1,11.5v1.83331 C1,14.28296,1.28461,15.20221,1.78973,16H13.89996z"
+                      ></path>
+                    </g>
+                  </svg>
+                  <p>
+                    Your Privacy Choices
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      version="1.1"
+                      id="Layer_1"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 30 14"
+                      height="12px"
+                      width="27px"
+                      style="enable-background: new 0 0 30 14; width: 27.5px"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <g id="final---dec.11-2020_1_">
+                          <g
+                            id="_x30_208-our-toggle_2_"
+                            transform="translate(-1275.000000, -200.000000)"
+                          >
+                            <g
+                              id="Final-Copy-2_2_"
+                              transform="translate(1275.000000, 200.000000)"
+                            >
+                              <path
+                                style="
+                                  fill-rule: evenodd;
+                                  clip-rule: evenodd;
+                                  fill: #ffffff;
+                                "
+                                d="M7.4,12.8h6.8l3.1-11.6H7.4C4.2,1.2,1.6,3.8,1.6,7S4.2,12.8,7.4,12.8z"
+                              ></path>
+                            </g>
+                          </g>
+                        </g>
+                        <g id="final---dec.11-2020">
+                          <g
+                            id="_x30_208-our-toggle"
+                            transform="translate(-1275.000000, -200.000000)"
+                          >
+                            <g
+                              id="Final-Copy-2"
+                              transform="translate(1275.000000, 200.000000)"
+                            >
+                              <path
+                                style="
+                                  fill-rule: evenodd;
+                                  clip-rule: evenodd;
+                                  fill: #0066ff;
+                                "
+                                d="M22.6,0H7.4c-3.9,0-7,3.1-7,7s3.1,7,7,7h15.2c3.9,0,7-3.1,7-7S26.4,0,22.6,0z M1.6,7c0-3.2,2.6-5.8,5.8-5.8      h9.9l-3.1,11.6H7.4C4.2,12.8,1.6,10.2,1.6,7z"
+                              ></path>
+                              <path
+                                id="x"
+                                style="fill: #ffffff"
+                                d="M24.6,4c0.2,0.2,0.2,0.6,0,0.8l0,0L22.5,7l2.2,2.2c0.2,0.2,0.2,0.6,0,0.8c-0.2,0.2-0.6,0.2-0.8,0      l0,0l-2.2-2.2L19.5,10c-0.2,0.2-0.6,0.2-0.8,0c-0.2-0.2-0.2-0.6,0-0.8l0,0L20.8,7l-2.2-2.2c-0.2-0.2-0.2-0.6,0-0.8      c0.2-0.2,0.6-0.2,0.8,0l0,0l2.2,2.2L23.8,4C24,3.8,24.4,3.8,24.6,4z"
+                              ></path>
+                              <path
+                                id="y"
+                                style="fill: #0066ff"
+                                d="M12.7,4.1c0.2,0.2,0.3,0.6,0.1,0.8l0,0L8.6,9.8C8.5,9.9,8.4,10,8.3,10c-0.2,0.1-0.5,0.1-0.7-0.1l0,0      L5.4,7.7c-0.2-0.2-0.2-0.6,0-0.8c0.2-0.2,0.6-0.2,0.8,0l0,0L8,8.6l3.8-4.5C12,3.9,12.4,3.9,12.7,4.1z"
+                              ></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </p>
+                </a>
+                <a
+                  href="//insurance.mediaalpha.com/content/privacy-policy.html?;0I9UrjJiSfQA_ii3KJioLnruTFj-c4xc7BTbns9Cvw8JcTvtLzqKIaSvM0fHWEJ-9MSnIR7F#cookies-and-technologies"
+                  target="_blank"
+                  class="globalFooter__labelText"
+                >
+                  <svg
+                    class="globalFooter__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8,0a8,8,0,1,0,8,8A8.024,8.024,0,0,0,8,0ZM5,11a.945.945,0,0,1-1-1A.945.945,0,0,1,5,9a.945.945,0,0,1,1,1A.945.945,0,0,1,5,11ZM7,6A.945.945,0,0,1,6,5,.945.945,0,0,1,7,4,.945.945,0,0,1,8,5,.945.945,0,0,1,7,6Zm4,4a.945.945,0,0,1-1-1,.945.945,0,0,1,1-1,.945.945,0,0,1,1,1A.945.945,0,0,1,11,10Z"
+                    ></path>
+                  </svg>
+                  <p>Cookies and Other Technologies</p>
+                </a>
+                <a
+                  href="//insurance.mediaalpha.com/content/terms-of-use.html?;0I9UrjJiSfQA_ii3KJioLnruTFj-c4xc7BTbns9Cvw8JcTvtLzqKIaSvM0fHWEJ-9MSnIR7F"
+                  target="_blank"
+                  class="globalFooter__labelText"
+                >
+                  <svg
+                    class="globalFooter__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="15.998"
+                    viewBox="0 0 16 15.998"
+                  >
+                    <g transform="translate(0 0)">
+                      <path
+                        d="M16,1a1,1,0,0,0-1-1H10.45A4.47,4.47,0,0,0,7.268,1.318L3.293,5.293a1,1,0,0,0,0,1.414,2.6,2.6,0,0,0,3.437.214l2.687-2.09L13.61,9.024a1.2,1.2,0,0,1-.069,1.761l-.566.483L11.354,9.646a.5.5,0,0,0-.708.708l1.566,1.565-.855.731-1.5-1.5a.5.5,0,1,0-.708.708L10.594,13.3l-.138.118a1.988,1.988,0,0,1-1.824.407,1.981,1.981,0,0,0-.57-1.24L4.477,9a2,2,0,0,0-2.829,2.828l3.586,3.586a2,2,0,0,0,2.542.234,4.017,4.017,0,0,0,1.376.253,3.977,3.977,0,0,0,2.608-.965l3.08-2.63a3.108,3.108,0,0,0,1.16-2.3Z"
+                      ></path>
+                      <path
+                        d="M2,7V2H5A1,1,0,1,0,5,0H1A1,1,0,0,0,0,1V7A1,1,0,1,0,2,7Z"
+                      ></path>
+                    </g>
+                  </svg>
+                  <p>Terms of Use</p>
+                </a>
+              </div>
+
+              <div class="globalFooter__termsAndPrivacy">
+                <a
+                  href="//insurance.mediaalpha.com/content/privacy-center.html?;0I9UrjJiSfQA_ii3KJioLnruTFj-c4xc7BTbns9Cvw8JcTvtLzqKIaSvM0fHWEJ-9MSnIR7F#contact-us"
+                  target="_blank"
+                  class="globalFooter__labelText"
+                >
+                  <svg
+                    class="globalFooter__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15.96"
+                    height="15.893"
+                    viewBox="0 0 15.96 15.893"
+                  >
+                    <g transform="translate(-0.053 -0.048)">
+                      <path
+                        d="M3.6,9.6v4.9a.741.741,0,0,0,1.3.5l2.3-2.7,4.7,3.5a.7.7,0,0,0,1.1-.4L16,.9a.714.714,0,0,0-1-.8L.5,5.9A.8.8,0,0,0,.3,7.2L1.9,8.4,6.5,6.2c.4-.2.7.3.4.5Z"
+                      ></path>
+                    </g>
+                  </svg>
+                  <p>Contact Us</p>
+                </a>
+                <a
+                  href="//insurance.mediaalpha.com/content/privacy-policy.html?;0I9UrjJiSfQA_ii3KJioLnruTFj-c4xc7BTbns9Cvw8JcTvtLzqKIaSvM0fHWEJ-9MSnIR7F"
+                  target="_blank"
+                  class="globalFooter__labelText"
+                >
+                  <svg
+                    class="globalFooter__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M12,10a2.994,2.994,0,0,0-2.5,1.347,3.42,3.42,0,0,0-3,0,3.007,3.007,0,1,0,.455,2.106,1.522,1.522,0,0,1,2.092,0A3,3,0,1,0,12,10ZM4,14a1,1,0,1,1,1-1A1,1,0,0,1,4,14Zm8,0a1,1,0,1,1,1-1A1,1,0,0,1,12,14Z"
+                    ></path>
+                    <path d="M12.8,4,12,0H4L3.2,4Z"></path>
+                    <path d="M13,5H3L0,8H16Z"></path>
+                  </svg>
+                  <p>Privacy Policy</p>
+                </a>
+                <a
+                  href="//insurance.mediaalpha.com/content/privacy-policy.html?;0I9UrjJiSfQA_ii3KJioLnruTFj-c4xc7BTbns9Cvw8JcTvtLzqKIaSvM0fHWEJ-9MSnIR7F#special-notice-california"
+                  target="_blank"
+                  class="globalFooter__labelText"
+                >
+                  <svg
+                    class="globalFooter__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15.665"
+                    height="16"
+                    viewBox="0 0 15.665 16"
+                  >
+                    <g transform="translate(-0.335 0)">
+                      <path
+                        d="M15,2a1,1,0,0,0-1,1V7a.5.5,0,0,1-.5.5h0A.5.5,0,0,1,13,7V1.553a1.037,1.037,0,0,0-.832-1.04A1,1,0,0,0,11,1.5V7a.5.5,0,0,1-.5.5h0A.5.5,0,0,1,10,7V1.053A1.037,1.037,0,0,0,9.168.014,1,1,0,0,0,8,1V7a.5.5,0,0,1-.5.5h0A.5.5,0,0,1,7,7V1.553A1.037,1.037,0,0,0,6.168.514,1,1,0,0,0,5,1.5V9.293a.5.5,0,0,1-.854.354l-2-2A1.081,1.081,0,0,0,.911,7.4,1.032,1.032,0,0,0,.469,8.834L2.78,12.942A6,6,0,0,0,8.009,16H10a6,6,0,0,0,6-6V3A1,1,0,0,0,15,2Z"
+                      ></path>
+                    </g>
+                  </svg>
+                  <p>California Privacy Choices</p>
+                </a>
+              </div>
+            </div>
+            <div
+              class="globalFooter__termsAndPrivacy globalFooter__termsAndPrivacy--compressed"
+            >
+              <a
+                href="//insurance.mediaalpha.com/content/privacy-center.html?;0I9UrjJiSfQA_ii3KJioLnruTFj-c4xc7BTbns9Cvw8JcTvtLzqKIaSvM0fHWEJ-9MSnIR7F"
+                target="_blank"
+                class="globalFooter__linkText"
+                >Privacy Center</a
+              >
+              |
+              <a
+                href="//insurance.mediaalpha.com/content/privacy-center.html?;0I9UrjJiSfQA_ii3KJioLnruTFj-c4xc7BTbns9Cvw8JcTvtLzqKIaSvM0fHWEJ-9MSnIR7F"
+                target="_blank"
+                class="globalFooter__linkText"
+              >
+                Your Privacy Choices
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  id="Layer_1"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 30 14"
+                  height="12px"
+                  style="enable-background: new 0 0 30 14"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g id="final---dec.11-2020_1_">
+                      <g
+                        id="_x30_208-our-toggle_2_"
+                        transform="translate(-1275.000000, -200.000000)"
+                      >
+                        <g
+                          id="Final-Copy-2_2_"
+                          transform="translate(1275.000000, 200.000000)"
+                        >
+                          <path
+                            style="
+                              fill-rule: evenodd;
+                              clip-rule: evenodd;
+                              fill: #ffffff;
+                            "
+                            d="M7.4,12.8h6.8l3.1-11.6H7.4C4.2,1.2,1.6,3.8,1.6,7S4.2,12.8,7.4,12.8z"
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
+                    <g id="final---dec.11-2020">
+                      <g
+                        id="_x30_208-our-toggle"
+                        transform="translate(-1275.000000, -200.000000)"
+                      >
+                        <g
+                          id="Final-Copy-2"
+                          transform="translate(1275.000000, 200.000000)"
+                        >
+                          <path
+                            style="
+                              fill-rule: evenodd;
+                              clip-rule: evenodd;
+                              fill: #0066ff;
+                            "
+                            d="M22.6,0H7.4c-3.9,0-7,3.1-7,7s3.1,7,7,7h15.2c3.9,0,7-3.1,7-7S26.4,0,22.6,0z M1.6,7c0-3.2,2.6-5.8,5.8-5.8      h9.9l-3.1,11.6H7.4C4.2,12.8,1.6,10.2,1.6,7z"
+                          ></path>
+                          <path
+                            id="x"
+                            style="fill: #ffffff"
+                            d="M24.6,4c0.2,0.2,0.2,0.6,0,0.8l0,0L22.5,7l2.2,2.2c0.2,0.2,0.2,0.6,0,0.8c-0.2,0.2-0.6,0.2-0.8,0      l0,0l-2.2-2.2L19.5,10c-0.2,0.2-0.6,0.2-0.8,0c-0.2-0.2-0.2-0.6,0-0.8l0,0L20.8,7l-2.2-2.2c-0.2-0.2-0.2-0.6,0-0.8      c0.2-0.2,0.6-0.2,0.8,0l0,0l2.2,2.2L23.8,4C24,3.8,24.4,3.8,24.6,4z"
+                          ></path>
+                          <path
+                            id="y"
+                            style="fill: #0066ff"
+                            d="M12.7,4.1c0.2,0.2,0.3,0.6,0.1,0.8l0,0L8.6,9.8C8.5,9.9,8.4,10,8.3,10c-0.2,0.1-0.5,0.1-0.7-0.1l0,0      L5.4,7.7c-0.2-0.2-0.2-0.6,0-0.8c0.2-0.2,0.6-0.2,0.8,0l0,0L8,8.6l3.8-4.5C12,3.9,12.4,3.9,12.7,4.1z"
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+              |
+              <a
+                href="//insurance.mediaalpha.com/content/privacy-policy.html?;0I9UrjJiSfQA_ii3KJioLnruTFj-c4xc7BTbns9Cvw8JcTvtLzqKIaSvM0fHWEJ-9MSnIR7F#cookies-and-technologies"
+                target="_blank"
+                class="globalFooter__linkText"
+                >Cookies and Other Technologies</a
+              >
+              |
+              <a
+                href="//insurance.mediaalpha.com/content/terms-of-use.html?;0I9UrjJiSfQA_ii3KJioLnruTFj-c4xc7BTbns9Cvw8JcTvtLzqKIaSvM0fHWEJ-9MSnIR7F"
+                target="_blank"
+                class="globalFooter__linkText"
+                >Terms of Use</a
+              >
+              |
+              <a
+                href="//insurance.mediaalpha.com/content/privacy-center.html?;0I9UrjJiSfQA_ii3KJioLnruTFj-c4xc7BTbns9Cvw8JcTvtLzqKIaSvM0fHWEJ-9MSnIR7F#contact-us"
+                target="_blank"
+                class="globalFooter__linkText"
+                >Contact Us</a
+              >
+              |
+              <a
+                href="//insurance.mediaalpha.com/content/privacy-policy.html?;0I9UrjJiSfQA_ii3KJioLnruTFj-c4xc7BTbns9Cvw8JcTvtLzqKIaSvM0fHWEJ-9MSnIR7F"
+                target="_blank"
+                class="globalFooter__linkText"
+                >Privacy Policy</a
+              >
+              |
+              <a
+                href="//insurance.mediaalpha.com/content/privacy-policy.html?;0I9UrjJiSfQA_ii3KJioLnruTFj-c4xc7BTbns9Cvw8JcTvtLzqKIaSvM0fHWEJ-9MSnIR7F#special-notice-california"
+                target="_blank"
+                class="globalFooter__linkText"
+                >California Privacy Choices</a
+              >
+            </div>
+          </div>
+
+          <div class="separation-line"></div>
+          <section id="footerDisclaimer" class="footerDisclaimer">
+            <style>
+              .footerDisclaimer__arrow {
+                transform: rotate(90deg);
+                display: inline-block;
+              }
+
+              @media (min-width: 768px) {
+                .footerDisclaimer__arrow {
+                  display: none;
+                }
+              }
+              .footerDisclaimer__medicare {
+                display: none;
+              }
+            </style>
+
+            <div
+              class="footerDisclaimer__title"
+              data-bs-toggle="collapse"
+              data-bs-target=".disclaimerBox"
+              data-toggle="collapse"
+              data-target=".disclaimerBox"
+              role="button"
+              aria-expanded="false"
+            >
+              <p>
+                <strong class="footerDisclaimer__health js-health-swap">
+                  Important Information:
+                  <svg
+                    version="1.1"
+                    class="footerDisclaimer__arrow mobileOnly"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 330 512"
+                    style="enable-background: new 0 0 330 512"
+                    xml:space="preserve"
+                    width="10"
+                    height="10"
+                  >
+                    <g>
+                      <polygon
+                        points="0,72 72,0 330,256 74,512 0,438 186,256"
+                      ></polygon>
+                    </g>
+                  </svg>
+                </strong>
+                <strong class="footerDisclaimer__medicare js-medicare-swap">
+                  Disclaimer:
+                  <svg
+                    version="1.1"
+                    class="footerDisclaimer__arrow mobileOnly"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 330 512"
+                    style="enable-background: new 0 0 330 512"
+                    xml:space="preserve"
+                    width="10"
+                    height="10"
+                  >
+                    <g>
+                      <polygon
+                        points="0,72 72,0 330,256 74,512 0,438 186,256"
+                      ></polygon>
+                    </g>
+                  </svg>
+                </strong>
+              </p>
+            </div>
+
+            <div
+              class="disclaimerBox collapse footerDisclaimer__text"
+              role="tabpanel"
+            >
+              <div class="footerDisclaimer__medicare js-medicare-swap">
+                <p>
+                  ObamacarePlans.com is operated by Quotelab, LLC, which is an
+                  independent broker and is not a federal or state Marketplace
+                  website. This website is owned and operated by QuoteLab, LLC,
+                  a licensed insurance agency, NPN #19911386. Invitations for
+                  application for health insurance on QuoteLab, LLC, only where
+                  licensed and appointed. License numbers are available upon
+                  request and are provided where required by law. QuoteLab's
+                  license information can be found at
+                  <a
+                    href="https://www.quotelab.com/licenses.html"
+                    target="_blank"
+                    rel="noopener"
+                    >https://www.quotelab.com/licenses.html</a
+                  >.
+                </p>
+                <p class="footerDisclaimer__medicare js-medicare-swap">
+                  Federal Contracting Statement: Plans are insured or covered by
+                  a Medicare Advantage organization with a Medicare contract
+                  and/or a Medicare-approved Part D sponsor. Enrollment in the
+                  plan depends on the plan’s contract renewal with Medicare.
+                </p>
+                <p
+                  class="footerDisclaimer__medicare js-medicare-swap js-medicare-plan"
+                >
+                  TPMO Disclaimer: We do not offer every plan available in your
+                  area. Currently we represent [73] organizations which offer
+                  [5110] products in your area. Please contact
+                  <a
+                    href="https://www.medicare.gov/"
+                    target="_blank"
+                    rel="”nofollow”"
+                    >Medicare.gov</a
+                  >
+                  or 1-800-MEDICARE, or your local State Health Insurance
+                  Program (SHIP) to get information on all of your options.<br />Please
+                  note that these numbers provided are not specific to your area
+                  but rather represent the number of organizations and the
+                  number of products available on a national basis. We will
+                  connect you with licensed insurance agents who can provide
+                  information about the number of organizations they represent
+                  and the number of products they offer in your service area.
+                </p>
+                <p>
+                  Submitting this form does NOT affect your current enrollment,
+                  nor will it enroll you in a Medicare Advantage plan, Medicare
+                  Prescription Drug plan, Medicare Supplement Plan, or any other
+                  Medicare plan. QuoteLab, LLC is independent of the Medicare
+                  program and is neither associated with nor endorsed by The
+                  Centers for Medicare &amp; Medicaid Services (CMS) or any
+                  other governmental agency.
+                </p>
+                <p>
+                  The plans represented on ObamacarePlans.com are Medicare
+                  Advantage HMO, PPO and PFFS organizations and stand-alone
+                  prescription drug plans with a Medicare contract. Enrollment
+                  in any plan depends on contract renewal. If you are paying
+                  Medicare Part B premium, you must continue to pay it to
+                  maintain coverage.
+                </p>
+
+                <p class="footerDisclaimer__medicare js-medicare-swap">
+                  Not all plans offer all of these benefits. Benefits may vary
+                  by carrier and location. Limitations and exclusions may apply.
+                </p>
+                <p class="footerDisclaimer__medicare js-medicare-swap">
+                  Every year, Medicare evaluates plans based on a 5-star rating
+                  system.
+                </p>
+                <p class="footerDisclaimer__medicare js-medicare-swap">
+                  Part B Premium give-back is not available with all plans.
+                  Availability varies by carrier and location. Actual Part B
+                  premium reduction could be lower. Deductibles, copays and
+                  coinsurance may apply.
+                </p>
+                <p class="footerDisclaimer__medicare js-medicare-swap">
+                  Based on median Medicare Advantage benefit amounts for dental
+                  available across multiple plans and metro areas. Not all
+                  benefits available in specific plans or regions.
+                </p>
+                <p class="footerDisclaimer__medicare js-medicare-swap">
+                  This information is not a complete description of benefits.
+                  Contact the plan for more information.
+                </p>
+                <p class="footerDisclaimer__medicare js-medicare-swap">
+                  Limitations, copayments, and restrictions may apply.
+                </p>
+                <p class="footerDisclaimer__medicare js-medicare-swap">
+                  [Benefits, premiums and/or copayments/coinsurance] may change
+                  on January 1 of each year.
+                </p>
+
+                <p class="footerDisclaimer__medicare js-medicare-swap">
+                  Enrollment in a plan may be limited to certain times of the
+                  year unless you qualify for a special [election/enrollment]
+                  period or you are in your Medicare Initial Election Period.
+                </p>
+
+                <p>Advertised Pricing:</p>
+
+                <p>
+                  There are several factors that impact your monthly premium;
+                  including your age, geographical location, annual income,
+                  dependents, and the type of plan you choose. Monthly premiums
+                  do not include out-of-pocket costs.
+                </p>
+              </div>
+
+              <div class="footerDisclaimer__health js-health-swap">
+                <p>
+                  ObamacarePlans.com is operated by QuoteLab, LLC, which is an
+                  independent broker and is not a federal or state insurance
+                  Marketplace or other website. It does not provide access to
+                  any federal or state marketplace or exchange. This website is
+                  owned and operated by QuoteLab, LLC, a licensed insurance
+                  agency, NPN #19911386. Invitations for application for health
+                  insurance are made through QuoteLab, LLC, only where licensed
+                  and appointed. License numbers are available upon request and
+                  are provided where required by law. QuoteLab's license
+                  information can be found at
+                  <a
+                    href="https://www.quotelab.com/licenses.html"
+                    target="_blank"
+                    rel="noopener"
+                    >https://www.quotelab.com/licenses.html</a
+                  >.
+                </p>
+
+                <p>
+                  This website does not provide information about specific
+                  health plans, or enable visitors to obtain insurance quotes,
+                  on this website. However, if you provide your information and
+                  consent, we will transfer your information to insurance
+                  carriers and brokers that may contact you to offer Affordable
+                  Care Act (ACA) plans, short-term plans, medical indemnity
+                  plans and/or healthcare sharing ministry plans, and we will
+                  receive compensation for such transfer. The advertisements
+                  appearing on this website are placed by clients from which
+                  QuoteLab, LLC receives compensation, and such compensation may
+                  impact whether such advertisements appear on this website and
+                  the order in which they appear.
+                </p>
+
+                <p>
+                  ObamacarePlans.com is required to comply with all applicable
+                  federal law, including the standards established under 45 CFR
+                  155.220(c) and (d) and standards established under 45 CFR
+                  155.260 to protect the privacy and security of personally
+                  identifiable information. This website does not provide a
+                  complete listing of, or display all data on all Qualified
+                  Health Plans being offered in your state or service area
+                  through the Marketplace website or the federal Medicare
+                  program. To see all available data on Qualified Health Plan
+                  options in your state, visit your state Marketplace website,
+                  go to the Health Insurance Marketplace website at
+                  https://www.healthcare.gov.
+                </p>
+
+                <p>
+                  This site uses cookies and tech to collect data needed for our
+                  services to work including to process your requests,
+                  personalize your experience, and measure the effectiveness of
+                  content we show you, among other business purposes (<a
+                    href="//insurance.mediaalpha.com/content/privacy-policy.html?;0I9UrjJiSfQA_ii3KJioLnruTFj-c4xc7BTbns9Cvw8JcTvtLzqKIaSvM0fHWEJ-9MSnIR7F#information-we-collect-automatically"
+                    target="_blank"
+                    >Learn More</a
+                  >). We share this data with the business partners we connect
+                  you with, who may combine it with data you provide to them or
+                  they collect from you (<a
+                    href="//insurance.mediaalpha.com/content/privacy-policy.html?;0I9UrjJiSfQA_ii3KJioLnruTFj-c4xc7BTbns9Cvw8JcTvtLzqKIaSvM0fHWEJ-9MSnIR7F#how-we-use-your-information"
+                    target="_blank"
+                    >Learn More</a
+                  >). To learn more about cookies and how to disable them, read
+                  our
+                  <a
+                    href="//insurance.mediaalpha.com/content/privacy-policy.html?;0I9UrjJiSfQA_ii3KJioLnruTFj-c4xc7BTbns9Cvw8JcTvtLzqKIaSvM0fHWEJ-9MSnIR7F#cookies-and-technologies"
+                    target="_blank"
+                    >Privacy Policy</a
+                  >.
+                </p>
+              </div>
+            </div>
+          </section>
+          <p class="globalFooter__copyrightText">
+            Copyright ©2024 Quotelab, LLC
+            <span style="white-space: nowrap">All Rights Reserved.</span>
+          </p>
+        </div>
+      </footer>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"
+      ></script>
+      <script>
+        $(function () {
+          // Owl Carousel
+          var owl = $(".owl-carousel");
+          owl.owlCarousel({
+            items: 4,
+            margin: 10,
+            loop: true,
+            nav: false,
+            dots: false,
+          });
+          // Previous button
+          $("#prevBtn").click(function () {
+            $(".owl-carousel").trigger("prev.owl.carousel");
+          });
+
+          // Next button
+          $("#nextBtn").click(function () {
+            $(".owl-carousel").trigger("next.owl.carousel");
+          });
+        });
+        var map = AmCharts.makeChart("mapdiv", {
+          type: "map",
+          theme: "light",
+          panEventsEnabled: true,
+          backgroundColor: "#F3F3F3",
+          backgroundAlpha: 1,
+          zoomControl: {
+            zoomControlEnabled: true,
+          },
+          dataProvider: {
+            map: "usaHigh",
+            getAreasFromMap: true,
+            areas: [
+              {
+                id: "US-MS",
+                showAsSelected: true,
+
+                url: "https://example.com/link-for-MS",
+              },
+              {
+                id: "US-TX",
+                showAsSelected: true,
+                url: "https://example.com/link-for-texas",
+              },
+            ],
+          },
+          areasSettings: {
+            autoZoom: true,
+            color: "#439CD6",
+            colorSolid: "#84ADE9",
+            selectedColor: "#84ADE9",
+            outlineColor: "#666666",
+            rollOverColor: "#9EC2F7",
+            rollOverOutlineColor: "#000000",
+          },
+          listeners: [
+            {
+              event: "clickMapObject",
+              method: function (event) {
+                // Check if the map object has a URL defined
+                if (event.mapObject.url) {
+                  // Open the URL in a new tab/window
+                  window.open(event.mapObject.url, "_blank");
+                }
+              },
+            },
+          ],
+        });
+      </script>
+    </footer>
+  </body>
+</html>
