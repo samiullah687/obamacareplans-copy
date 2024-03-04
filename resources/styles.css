@@ -250,3 +250,9 @@ header h5 a:hover {
     opacity: 0;
   }
 }
+
+@media (max-width: 900px) {
+  #mapdiv {
+    display: none;
+  }
+}
